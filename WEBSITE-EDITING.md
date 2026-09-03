@@ -1,52 +1,36 @@
-# Updating your portfolio without HTML
+# Upload this website update
 
-This update keeps your website on GitHub Pages at https://mjlarsen12.github.io . Pages CMS is a separate editing dashboard; visitors do not need an account, and the dashboard does not change your website address.
+The PDFs have been added to this download, not to GitHub. This package is based on the latest GitHub version retrieved for this update and preserves the favicon change.
 
-## One-time setup
+1. Extract `Marcus-Larsen-Website-With-Papers.zip`.
+2. In your GitHub repository, choose **Add file > Upload files**.
+3. Upload ALL the extracted files together into the repository's main folder. There are no subfolders in this package. Do not upload the ZIP itself.
+4. Choose **Commit changes**. Matching filenames replace the previous versions.
+5. Wait for GitHub Pages to publish, then refresh the Writing page. There should be seven document cards: the original Prayer in Song excerpt and the six newly supplied papers/resources.
 
-1. Extract `Marcus-Larsen-Website-Editor-Update.zip`.
-2. Open your `mjlarsen12.github.io` repository on GitHub.
-3. Choose **Add file > Upload files**. Upload the extracted contents, including the `content`, `files`, and `media` folders, plus `.pages.yml` and `.nojekyll`. Keep those folder names. The HTML files belong in the repository's main folder, not inside another enclosing folder.
-4. Choose **Commit changes**. This publishes the updated site using your existing GitHub Pages settings. In the repository, check that `.pages.yml`, `prayer-in-song.html`, `portfolio.js`, and the `content` folder appear.
-5. Visit https://app.pagescms.org and sign in with GitHub. Follow its GitHub App connection prompts, granting access to this website repository. You do not need to grant access to unrelated repositories.
-6. Open `mjlarsen12.github.io` and the `main` branch. The configuration already exists: do not replace it with a starter configuration. You should see **Website photos**, **Writing page documents**, and **Prayer in Song resources**.
+## The editing dashboard
 
-The configuration and site code have been checked locally. The authenticated Pages CMS connection must still be completed in your GitHub account; it has not been tested through your account.
+Pages CMS requires a configuration file named `.pages.yml`, including the leading dot. This package includes it. If GitHub does not show `.pages.yml` after your upload, open `pages.yml`, click its pencil icon, change the filename at the top to `.pages.yml`, and commit. If `.pages.yml` already exists, no rename is needed. The ordinary `pages.yml` file is only a backup; the editor does not use it.
 
-## Add or change a photo
+Visit https://app.pagescms.org, sign in with GitHub, and select your website repository and `main` branch. The editor configuration now matches the JSON files in your repository's main folder.
 
-1. Open **Website photos**.
-2. Find the home portrait, Prayer in Song teaching photo, or data-page car photo. Optional About and Projects photos are also available.
-3. Choose or upload a JPG, JPEG, PNG, or WebP photo.
-4. Describe the photo for screen readers and optionally add a caption.
-5. Save. Allow GitHub Pages time to publish, then refresh your website.
+- **Website photos**: choose or upload the homepage portrait, teaching photo, car photo, and optional About/Projects photos. Add descriptive alternative text and an optional caption. The photo fields are unchanged from your uploaded version.
+- **Writing page documents**: add an item, enter a title, short description, and optional category, choose/upload a PDF, and save.
+- **Prayer in Song resources**: maintain the separate resource list for that project in the same way.
 
-No photos have been included yet. Until a photo is selected, the page retains its text layout rather than displaying a broken image. The home portrait uses a vertical crop; the other pages show the full photo. Use reasonably sized images (for example, about 1600 pixels wide) to keep pages fast. PDFs are not automatically compressed.
+Future uploads through Pages CMS are placed in its managed media folders automatically. Existing PDFs in this package live in the main folder and remain valid selections in the document records. Save a new upload to replace an existing document selection when needed.
 
-## Add a PDF
+Saving to the main branch publishes through GitHub Pages after its normal delay. Removing a document card does not delete the PDF itself. Do not re-upload older JSON files after editing in Pages CMS, since that would restore the old lists.
 
-1. Open **Writing page documents** or **Prayer in Song resources**.
-2. Add an item to **Documents**.
-3. Enter its title, short description, and optional category (such as Hymn, Chart, Essay, or Handout).
-4. Select or upload the PDF.
-5. Save. The website adds a document card with a working PDF link automatically.
+## Included work
 
-To feature one PDF in both places, add an item in each list and select the same existing PDF. Reorder the list to change display order. Remove an item to remove its card from that page. Removing the card does not delete the underlying uploaded PDF; manage unused files separately in Media. Because GitHub Pages and the repository are public, uploaded files and changes saved to `main` are public. This editor is for published content, not private drafts.
+- Exegesis of Acts 20:7–12 (converted from Word to PDF)
+- Exegesis of Luke 1:39–56 (converted from Word to PDF)
+- Exegesis of I Corinthians 4:1–13 (converted from Word to PDF)
+- The Nature of Sacred Scripture (converted from Word to PDF; title follows the document)
+- A New Angle on SAS (original PDF; also featured on Data & Analysis)
+- Holy Cross Procession — Presider and Ministers Draft (original PDF; also linked from Projects)
 
-The website fetches its current document lists when a visitor loads the page. JavaScript is needed to see subsequent CMS updates; the original manuscript link remains as a basic fallback. After saving an update, a publication delay and browser refresh may be needed.
+The paper texts were not edited. The Word conversions preserve the documents' academic title pages, footnotes, tables, and bibliographies. The Holy Cross resource remains explicitly labeled as a draft. This update also repairs links to the existing fuel-analysis and Prayer in Song PDFs, which were uploaded to the main folder.
 
-## What this editor covers
-
-- Homepage portrait, Prayer in Song teaching photo, data-page car photo, and optional About/Projects photos.
-- Photo descriptions and captions.
-- PDF titles, descriptions, categories, uploads, and ordering on Writing and Prayer in Song.
-
-It is not a drag-and-drop layout editor. Other page text and layout still live in the HTML/CSS files and can be revised with assistance. Website hosting remains with GitHub Pages. The free Pages CMS service is provided by a separate project.
-
-Keep this update as a backup. After editing through Pages CMS, do not re-upload the old `content/*.json` files: those would replace your newer photo choices and document lists.
-
-Official references:
-- https://pagescms.org/ (free hosted editor)
-- https://pagescms.org/docs/quick-start/ (GitHub sign-in and app connection)
-- https://pagescms.org/docs/configuration/media/ (media uploads)
-- https://pagescms.org/docs/configuration/fields/file/ (PDF fields)
+Website links and configuration were checked locally. The authenticated Pages CMS connection still needs to be completed through your account if you have not already done so.

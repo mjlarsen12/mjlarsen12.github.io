@@ -1,4 +1,4 @@
-/* Pages CMS edits content/*.json. Rendering uses textContent, never HTML from uploads. */
+/* Pages CMS edits the photo and document JSON files. Rendering uses textContent, never HTML from uploads. */
 (() => {
   'use strict';
   const root = new URL('.', document.baseURI);
@@ -12,7 +12,7 @@
       const decoded = decodeURIComponent(url.pathname);
       const valid = kind === 'image'
         ? /\/media\/images\/[^/]+\.(png|jpe?g|webp)$/i
-        : /\/files\/[^/]+\.pdf$/i;
+        : /\/(?:files\/)?[^/]+\.pdf$/i;
       return valid.test(decoded) ? url.href : null;
     } catch { return null; }
   }
@@ -55,7 +55,7 @@
     img.src = url;
   }
   async function readContent(name) {
-    const response = await fetch(new URL(`content/${name}.json`, root), {cache: 'no-cache'});
+    const response = await fetch(new URL(`${name}.json`, root), {cache: 'no-cache'});
     if (!response.ok) throw new Error(`Content unavailable: ${name}`);
     return response.json();
   }
