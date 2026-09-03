@@ -1,0 +1,160 @@
+media:
+- name: images
+  label: Photos
+  input: media/images
+  output: /media/images
+  extensions:
+  - jpg
+  - jpeg
+  - png
+  - webp
+  rename: safe
+- name: documents
+  label: PDF documents
+  input: files
+  output: /files
+  extensions:
+  - pdf
+  rename: safe
+content:
+- name: photos
+  label: Website photos
+  type: file
+  path: content/photos.json
+  fields:
+  - name: home
+    label: Home page portrait
+    type: object
+    fields:
+    - name: image
+      label: Choose or upload photo
+      type: image
+      options:
+        media: images
+    - name: alt
+      label: Describe the photo for screen readers
+      type: string
+      required: true
+    - name: caption
+      label: Caption (optional)
+      type: text
+  - name: prayer
+    label: Prayer in Song teaching photo
+    type: object
+    fields:
+    - name: image
+      label: Choose or upload photo
+      type: image
+      options:
+        media: images
+    - name: alt
+      label: Describe the photo for screen readers
+      type: string
+      required: true
+    - name: caption
+      label: Caption (optional)
+      type: text
+  - name: car
+    label: Data page car photo
+    type: object
+    fields:
+    - name: image
+      label: Choose or upload photo
+      type: image
+      options:
+        media: images
+    - name: alt
+      label: Describe the photo for screen readers
+      type: string
+      required: true
+    - name: caption
+      label: Caption (optional)
+      type: text
+  - name: about
+    label: About page photo (optional)
+    type: object
+    fields:
+    - name: image
+      label: Choose or upload photo
+      type: image
+      options:
+        media: images
+    - name: alt
+      label: Describe the photo for screen readers
+      type: string
+      required: true
+    - name: caption
+      label: Caption (optional)
+      type: text
+  - name: projects
+    label: Projects page photo (optional)
+    type: object
+    fields:
+    - name: image
+      label: Choose or upload photo
+      type: image
+      options:
+        media: images
+    - name: alt
+      label: Describe the photo for screen readers
+      type: string
+      required: true
+    - name: caption
+      label: Caption (optional)
+      type: text
+- name: writing
+  label: Writing page documents
+  type: file
+  path: content/writing.json
+  fields:
+  - name: documents
+    label: Documents
+    type: object
+    list: true
+    fields:
+    - name: title
+      label: Title
+      type: string
+      required: true
+    - name: description
+      label: Short description
+      type: text
+    - name: category
+      label: Category (e.g. Hymn, Chart, Essay)
+      type: string
+    - name: file
+      label: Choose or upload PDF
+      type: file
+      required: true
+      options:
+        media: documents
+        extensions:
+        - pdf
+- name: prayer
+  label: Prayer in Song resources
+  type: file
+  path: content/prayer.json
+  fields:
+  - name: documents
+    label: Documents
+    type: object
+    list: true
+    fields:
+    - name: title
+      label: Title
+      type: string
+      required: true
+    - name: description
+      label: Short description
+      type: text
+    - name: category
+      label: Category (e.g. Hymn, Chart, Essay)
+      type: string
+    - name: file
+      label: Choose or upload PDF
+      type: file
+      required: true
+      options:
+        media: documents
+        extensions:
+        - pdf
