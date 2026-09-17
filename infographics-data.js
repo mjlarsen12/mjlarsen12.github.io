@@ -1,1 +1,10 @@
-window.infographics=[];
+window.infographics=[
+  {title:'Holy Week Lectionary',description:'A chart of the readings for Palm Sunday, the weekdays of Holy Week, and the Paschal Triduum.',file:'infographics/holy-week-lectionary.pdf',thumbnail:'infographics/holy-week-lectionary-thumbnail.jpg'},
+  {title:'Lenten Sunday Lectionary',description:'A comparison of the Gospel readings for Lent across Years A, B, and C.',file:'infographics/lenten-sunday-lectionary.pdf',thumbnail:'infographics/lenten-sunday-lectionary-thumbnail.jpg'},
+  {title:'The Advent “O” Antiphons',description:'The December antiphons alongside verses of “O Come, O Come, Emmanuel” and biblical references.',file:'infographics/o-antiphons.pdf',thumbnail:'infographics/o-antiphons-thumbnail.jpg'},
+  {title:'Mary’s Magnificat and the Old Testament',description:'Mary’s song in Luke compared with Hannah’s song and other Old Testament parallels.',file:'infographics/magnificat-comparison.pdf',thumbnail:'infographics/magnificat-comparison-thumbnail.jpg'},
+  {title:'The Messianic Reversal of the Fall',description:'A chart connecting the curses in Genesis 3 with their fulfillment and redemption in Christ.',file:'infographics/messianic-reversal-fall.pdf',thumbnail:'infographics/messianic-reversal-fall-thumbnail.jpg'},
+  {title:'Pauline Beatitudes',description:'A side-by-side comparison of the Beatitudes in Matthew 5 and Paul’s tribulations in 1 Corinthians 4.',file:'infographics/pauline-beatitudes.pdf',thumbnail:'infographics/pauline-beatitudes-thumbnail.jpg'},
+  {title:'Pauline Beatitudes: Research Poster',description:'A research poster comparing Matthew 5 and 1 Corinthians 4 in the context of shared early Christian traditions.',file:'infographics/pauline-beatitudes-poster.pdf',thumbnail:'infographics/pauline-beatitudes-poster-thumbnail.jpg'},
+  {title:'Two Stabat Mater Hymns',description:'A comparison of Stabat Mater Speciosa at the crib and Stabat Mater Dolorosa at the Cross.',file:'infographics/stabat-mater-comparison.pdf',thumbnail:'infographics/stabat-mater-comparison-thumbnail.jpg'}
+];
