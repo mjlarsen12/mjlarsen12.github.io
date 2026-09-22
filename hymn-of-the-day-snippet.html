@@ -1,0 +1,20 @@
+<!-- Add this where you want the selected Hymn of the Day to appear -->
+<section class="hymn-of-the-day-page">
+  <div class="hymn-controls">
+    <label for="hymn-date-select">Choose a feast:</label>
+    <select id="hymn-date-select"></select>
+  </div>
+
+  <div id="hymn-selected"></div>
+
+  <section class="hymn-archive">
+    <h2>Hymn of the Day PDF Archive</h2>
+    <p>Select an entry to display it above, or open the formatted PDF.</p>
+    <div id="hymn-pdf-archive"></div>
+  </section>
+</section>
+
+<!-- Put these near the end of the page, before </body>. Adjust paths if needed. -->
+<link rel="stylesheet" href="/hymn-of-the-day.css">
+<script src="/hymn-of-the-day-data.js"></script>
+<script src="/hymn-of-the-day.js"></script>
