@@ -374,7 +374,7 @@ In the final verse, we ask God to look upon us, not simply as individuals, but a
     dates: [{ type: "nthWeekday", month: 11, weekday: 4, occurrence: 4 }],
     tags: ["Thanksgiving", "Harvest", "Judgment", "Wheat and Weeds"],
     pdf: "/hymn-of-the-day/thanksgiving-day.pdf",
-    recording: "https://www.youtube.com/watch?v=51OQb1jYWg0&list=OLAK5uy_mfzWLAkNgHHWHfvWQM_8c4tDgfjfxPbTI&index=10",
+    recording: "https://www.youtube.com/watch?v=51OQb1jYWg0",
     text: `1. Come, ye thankful people, come,
 raise the song of harvest home!
 All is safely gathered in,
